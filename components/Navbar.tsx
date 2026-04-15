@@ -9,7 +9,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <img
             src="/logo.png"
-            alt="SilentRemover Logo"
+        
             width={32}
             height={32}
             className="rounded-lg object-cover"
