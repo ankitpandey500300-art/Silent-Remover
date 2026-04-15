@@ -1,22 +1,20 @@
 "use client";
 import Link from "next/link";
 import { Lock } from "lucide-react";
-import Image from "next/image";
 
 export default function Navbar() {
   return (
     <nav className="w-full border-b border-gray-800 bg-background/80 backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 relative flex items-center justify-center overflow-hidden rounded-lg">
-            <Image
-              src="/logo.png"
-              alt="SilentRemover Logo"
-              width={32}
-              height={32}
-              className="object-cover"
-            />
-          </div>
+          <img
+            src="/logo.png"
+            alt="SilentRemover Logo"
+            width={32}
+            height={32}
+            className="rounded-lg object-cover"
+            onError={(e) => { e.currentTarget.style.display = 'none' }}
+          />
           <span className="font-bold text-xl tracking-tight text-white hover:text-accent transition-colors">
             SilentRemover
           </span>
