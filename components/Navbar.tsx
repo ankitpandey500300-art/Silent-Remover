@@ -10,7 +10,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <div className="w-8 h-8 relative flex items-center justify-center overflow-hidden rounded-lg">
             {/* You will need to save the uploaded image as public/logo.png */}
-            <img src="https://ibb.co/RkdvX3qV" alt="SilentRemover Logo" className="w-full h-full object-cover" />
+            <img src="/logo.png" alt="SilentRemover Logo" className="w-full h-full object-cover" />
           </div>
           <span className="font-bold text-xl tracking-tight text-white hover:text-accent transition-colors">
             SilentRemover
